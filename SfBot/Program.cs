@@ -20,5 +20,6 @@ namespace SfBot
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
+    //Here we give the startup class, which is used to configure the services and request pipeline for the app.
     }
 }
