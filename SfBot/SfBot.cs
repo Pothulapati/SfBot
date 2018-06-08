@@ -54,6 +54,10 @@ namespace SfBot
                     await Context.Client.Nodes.EnableNodeAsync(new NodeName("_Node_4"));
                     await Context.SendActivity("Activating Node...");
                 }
+                else if(intent.intent == "Greetings")
+                {
+                    await Context.SendActivity("Hello Bro!");
+                }
 
             }
         }
